@@ -132,7 +132,7 @@ body{
 /* 텍스트 공통 */
 .story-stack {
   width: 100%;
-  line-height: 1.9;   /* 줄간 핵심 */
+  line-height: 2.0;   /* 줄간 핵심 */
   font-size: 16px;
 }
 
@@ -1049,12 +1049,13 @@ and bless this special day.</p>
   </div>
 </section>
 <style>
-/* ===== GALLERY FINAL FIX ===== */
+/* ===== GALLERY FINAL FIX : NO CROP ===== */
 .gallery-final .gallery-grid-final{
   display:grid;
   grid-template-columns:repeat(3, minmax(0, 1fr));
   gap:10px;
   margin:22px auto 0;
+  align-items:start;
 }
 
 .gallery-final .gc{
@@ -1062,22 +1063,28 @@ and bless this special day.</p>
   overflow:hidden;
   border-radius:14px;
   border:1px solid rgba(255,255,255,.10);
-  background:rgba(255,255,255,.04);
-  aspect-ratio:1 / 1;
+  background:#f8f6f2;
+  aspect-ratio:4 / 5;   /* 정사각형보다 덜 잘리고 웨딩사진 비율에 더 잘 맞음 */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:6px;
+  box-sizing:border-box;
   cursor:pointer;
 }
 
 .gallery-final .gc img{
   width:100%;
   height:100%;
-  object-fit:cover;
+  object-fit:contain;   /* 핵심: 사진 안 잘리게 */
   object-position:center;
   display:block;
-  transition:transform .35s ease;
+  transition:none;      /* 확대 효과 제거 */
+  background:#f8f6f2;
 }
 
 .gallery-final .gc:hover img{
-  transform:scale(1.03);
+  transform:none;       /* hover 시 잘리는 현상 방지 */
 }
 
 .gallery-final .gallery-more-item{
@@ -1085,7 +1092,7 @@ and bless this special day.</p>
 }
 
 .gallery-final .gallery-grid-final.is-open .gallery-more-item{
-  display:block;
+  display:flex;
 }
 
 .gallery-final .gallery-more-wrap-final{
@@ -1122,6 +1129,8 @@ and bless this special day.</p>
 
   .gallery-final .gc{
     border-radius:10px;
+    padding:4px;
+    aspect-ratio:4 / 5;
   }
 
   .gallery-final .gallery-more-btn-final{
@@ -1208,7 +1217,7 @@ document.getElementById("lightbox").style.display="none";
       <div class="way-desc">
         지선 0411, 4432, 4435<br>
         간선 140, 341, 400, 405, 421, 440, 441, 452, 470, 741<br>
-        서초09, 서초18, 서초18-1, 서초20
+        마을버스 서초09, 서초18, 서초18-1, 서초20
       </div>
     </div>
 
@@ -1223,7 +1232,7 @@ document.getElementById("lightbox").style.display="none";
     <div class="way-item">
       <div class="way-hd"><span class="way-ico">🅿️</span><span class="way-tit">주차안내</span></div>
       <div class="way-desc">
-        초대형 700대 주차장(지상 주차장과 지하주차장 동시 2곳 운영)<br>
+        초대형 700대 주차장(지상 주차장과 지하주차장 동시 2곳 운영)과 <br>
         바로 옆 900여대의 환승주차장
       </div>
     </div>
