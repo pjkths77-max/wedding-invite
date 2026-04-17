@@ -456,70 +456,6 @@ body{
 .cd-num{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--white);line-height:1}
 .cd-unit{font-size:0.52rem;letter-spacing:0.15em;color:rgba(255,255,255,.7);margin-top:2px}
 
-/* ── GALLERY 3x3 ── */
-.gal{
-  display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  gap:8px;
-  margin-top:22px;
-}
-
-.gc{
-  position:relative;
-  overflow:hidden;
-  border:1px solid var(--border);
-  border-radius:4px;
-  background:#0a1520;
-  aspect-ratio:1 / 1;
-  cursor:pointer;
-}
-
-.gc img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:center;
-  display:block;
-  transition:transform .35s ease;
-}
-
-.gc:hover img{
-  transform:scale(1.03);
-}
-
-.gc.hidden{
-  display:none;
-}
-
-.more-wrap{
-  margin-top:14px;
-  text-align:center;
-}
-
-.more-btn{
-  padding:11px 18px;
-  border:1px solid var(--border);
-  border-radius:22px;
-  background:rgba(255,255,255,.04);
-  color:var(--off);
-  font-size:.72rem;
-  font-family:var(--font-kr);
-  letter-spacing:.08em;
-  cursor:pointer;
-}
-
-.more-btn:hover{
-  background:var(--sky);
-  color:var(--bg);
-  border-color:var(--sky);
-}
-/* LIGHTBOX */
-.lb{position:fixed;inset:0;background:rgba(0,0,0,.95);z-index:200;
-  display:none;align-items:center;justify-content:center;padding:18px}
-.lb.open{display:flex}
-.lb img{max-width:100%;max-height:92vh;object-fit:contain;border-radius:2px}
-.lb-x{position:absolute;top:18px;right:18px;font-size:1.6rem;color:white;cursor:pointer;opacity:.7}
-
 /* ── MAP ── */
 .map-ph{
   width:100%;height:170px;
@@ -691,53 +627,7 @@ footer p{font-size:0.66rem;color:rgba(255,255,255,.28);line-height:2;letter-spac
   text-align:left;
 }
 
-/* ── GALLERY CLEAN GRID ── */
-.gal{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:6px;
-  margin-top:22px;
-}
-.gc{
-  position:relative;
-  overflow:hidden;
-  border:1px solid var(--border);
-  border-radius:4px;
-  background:#0a1520;
-  aspect-ratio:1 / 1;
-  cursor:pointer;
-}
-.gc img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:center;
-  display:block;
-  transition:transform .35s ease;
-}
-.gc:hover img{transform:scale(1.03)}
-.gc.hidden{display:none}
-
-.more-wrap{
-  margin-top:14px;
-  text-align:center;
-}
-.more-btn{
-  padding:11px 18px;
-  border:1px solid var(--border);
-  border-radius:24px;
-  background:rgba(255,255,255,.04);
-  color:var(--off);
-  font-size:.72rem;
-  font-family:var(--font-kr);
-  letter-spacing:.08em;
-  cursor:pointer;
-}
-.more-btn:hover{
-  background:var(--sky);
-  color:var(--bg);
-  border-color:var(--sky);
-}/* ── NAVER MAP SECTION ── */
+/* ── NAVER MAP SECTION ── */
 .map-real-wrap{
   margin-top:18px;
 }
@@ -1068,184 +958,106 @@ and bless this special day.</p>
   </div>
 </section>
 
-    <button class="more-btn" id="galleryMoreBtn" onclick="toggleGallery()">사진 더보기</button>
-  </div>
-</section>
-<!-- ════ GALLERY (완성형) ════ -->
-<section class="sec sec-alt rv">
+<!-- ════ GALLERY FINAL ════ -->
+<section>
 
-  <span class="script-head">Gallery</span>
-  <span class="en-head">우리의 소중한 순간들 · Our precious moments</span>
+<h2 style="text-align:center;">Gallery</h2>
+<p style="text-align:center;">우리의 소중한 순간들 · Our precious moments</p>
 
-  <!-- 슬라이드 -->
-  <div class="slider" id="slider"></div>
+<div id="gallery" style="
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:8px;
+max-width:600px;
+margin:20px auto;
+">
 
-  <!-- 썸네일 -->
-  <div class="gal" id="galleryGrid"></div>
+<img src="01.jpg" onclick="openLightbox(this)">
+<img src="02.jpg" onclick="openLightbox(this)">
+<img src="03.jpg" onclick="openLightbox(this)">
 
-  <!-- 더보기 -->
-  <div class="more-wrap">
-    <button class="more-btn" onclick="toggleGallery()">사진 더보기</button>
-  </div>
+<img src="04.jpg" onclick="openLightbox(this)">
+<img src="05.jpg" onclick="openLightbox(this)">
+<img src="06.jpg" onclick="openLightbox(this)">
+
+<img src="07.jpg" onclick="openLightbox(this)">
+<img src="08.jpg" onclick="openLightbox(this)">
+<img src="09.jpg" onclick="openLightbox(this)">
+
+<img src="10.jpg" class="hidden" onclick="openLightbox(this)">
+<img src="11.jpg" class="hidden" onclick="openLightbox(this)">
+<img src="12.jpg" class="hidden" onclick="openLightbox(this)">
+
+<img src="13.jpg" class="hidden" onclick="openLightbox(this)">
+<img src="14.jpg" class="hidden" onclick="openLightbox(this)">
+<img src="15.jpg" class="hidden" onclick="openLightbox(this)">
+
+<img src="16.jpg" class="hidden" onclick="openLightbox(this)">
+<img src="17.jpg" class="hidden" onclick="openLightbox(this)">
+<img src="18.jpg" class="hidden" onclick="openLightbox(this)">
+
+<img src="19.jpg" class="hidden" onclick="openLightbox(this)">
+<img src="20.jpg" class="hidden" onclick="openLightbox(this)">
+
+</div>
+
+<div style="text-align:center;">
+<button onclick="toggleGallery()">사진 더보기</button>
+</div>
 
 </section>
 
 <!-- 라이트박스 -->
-<div id="lightbox">
-  <span id="close">&times;</span>
-  <img id="lightbox-img">
+<div id="lightbox" style="
+display:none;
+position:fixed;
+top:0; left:0;
+width:100%; height:100%;
+background:rgba(0,0,0,0.9);
+justify-content:center;
+align-items:center;
+z-index:999;
+">
+
+<span onclick="closeLightbox()" style="
+position:absolute;
+top:30px;
+right:40px;
+font-size:40px;
+color:white;
+cursor:pointer;
+">×</span>
+
+<img id="lightbox-img" style="max-width:90%; max-height:90%;">
 </div>
 
 <style>
-/* 슬라이드 */
-.slider {
-  max-width: 600px;
-  margin: 30px auto;
-}
-
-.slide {
-  display: none;
-  width: 100%;
-  border-radius: 12px;
-}
-
-.slide.active {
-  display: block;
-}
-
-/* 갤러리 */
-.gal {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  max-width: 600px;
-  margin: 20px auto;
-}
-
-.gc img {
-  width: 100%;
-  border-radius: 8px;
-  cursor: pointer;
+#gallery img {
+width:100%;
+border-radius:8px;
+cursor:pointer;
 }
 
 .hidden {
-  display: none;
-}
-
-/* 버튼 */
-.more-wrap {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.more-btn {
-  padding: 10px 20px;
-  border: none;
-  background: #ddd;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-/* 라이트박스 */
-#lightbox {
-  display: none;
-  position: fixed;
-  top:0; left:0;
-  width:100%; height:100%;
-  background: rgba(0,0,0,0.9);
-  justify-content: center;
-  align-items: center;
-}
-
-#lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-}
-
-#close {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
+display:none;
 }
 </style>
 
 <script>
-const slider = document.getElementById("slider");
-const gallery = document.getElementById("galleryGrid");
-
-let slides = [];
-
-/* 이미지 생성 */
-for(let i=1; i<=20; i++){
-  let num = String(i).padStart(2,'0');
-
-  /* 슬라이드 */
-  let slide = document.createElement("img");
-  slide.src = `images/${num}.jpg`;
-  slide.className = "slide";
-  if(i===1) slide.classList.add("active");
-
-  slider.appendChild(slide);
-  slides.push(slide);
-
-  /* 썸네일 */
-  let div = document.createElement("div");
-  div.className = "gc";
-  if(i>9) div.classList.add("hidden");
-
-  let img = document.createElement("img");
-  img.src = `images/${num}.jpg`;
-
-  img.onclick = () => {
-    openLightbox(num);
-  };
-
-  div.appendChild(img);
-  gallery.appendChild(div);
-}
-
-/* 슬라이드 자동 */
-let current = 0;
-function showSlide(index){
-  slides.forEach(s=>s.classList.remove("active"));
-  slides[index].classList.add("active");
-}
-
-function nextSlide(){
-  current = (current+1)%slides.length;
-  showSlide(current);
-}
-
-setInterval(nextSlide, 4000);
-
-/* 더보기 */
 function toggleGallery(){
-  document.querySelectorAll(".hidden").forEach(el=>{
-    el.classList.toggle("hidden");
-  });
+document.querySelectorAll(".hidden").forEach(el=>{
+el.classList.toggle("hidden");
+});
 }
 
-/* 라이트박스 */
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-
-function openLightbox(num){
-  lightbox.style.display="flex";
-  lightboxImg.src = `images/${num}.jpg`;
+function openLightbox(img){
+document.getElementById("lightbox").style.display="flex";
+document.getElementById("lightbox-img").src = img.src;
 }
 
-document.getElementById("close").onclick=()=>{
-  lightbox.style.display="none";
-};
-
-lightbox.onclick=(e)=>{
-  if(e.target===lightbox){
-    lightbox.style.display="none";
-  }
-};
+function closeLightbox(){
+document.getElementById("lightbox").style.display="none";
+}
 </script><!-- ════ VENUE ════ -->
 <section class="sec sec-alt rv">
   <span class="script-head">오시는 길</span>
@@ -1500,26 +1312,6 @@ function sendGB(){
 }
 </script>
 <script>
-/* 갤러리 더보기 */
-function toggleGallery(){
-  const hiddenItems = document.querySelectorAll('#galleryGrid .gc.hidden');
-  const btn = document.getElementById('galleryMoreBtn');
-
-  const isHidden = hiddenItems.length && getComputedStyle(hiddenItems[0]).display === 'none';
-
-  hiddenItems.forEach(item=>{
-    item.style.display = isHidden ? 'block' : 'none';
-  });
-
-  btn.textContent = isHidden ? '사진 접기' : '사진 더보기';
-}
-
-/* 첫 로드시 hidden 유지 */
-document.addEventListener('DOMContentLoaded', function(){
-  document.querySelectorAll('#galleryGrid .gc.hidden').forEach(item=>{
-    item.style.display = 'none';
-  });
-});
 
 /* 네이버 지도 */
 document.addEventListener('DOMContentLoaded', function(){
