@@ -958,97 +958,104 @@ and bless this special day.</p>
   </div>
 </section>
 
-<!-- ===== GALLERY : FINAL ===== -->
-<section class="sec sec-alt rv gallery-final">
+<!-- ===== GALLERY : ZOOM + NO CROP + MORE FIX ===== -->
+<section class="sec sec-alt rv gallery-upgrade">
   <span class="script-head">Gallery</span>
   <span class="en-head">우리의 소중한 순간들 · Our Precious Moments</span>
 
-  <div class="gal gallery-grid-final" id="galleryGridFinal">
+  <div class="wg-grid" id="wgGrid">
     <!-- 기본 9장 -->
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
-      <img src="01.jpg" alt="Wedding gallery 01" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
-      <img src="02.jpg" alt="Wedding gallery 02" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
-      <img src="03.jpg" alt="Wedding gallery 03" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
+    <button type="button" class="wg-item" data-full="01.jpg" aria-label="사진 1 확대 보기">
+      <img src="01.jpg" alt="Wedding photo 01" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
+    <button type="button" class="wg-item" data-full="02.jpg" aria-label="사진 2 확대 보기">
+      <img src="02.jpg" alt="Wedding photo 02" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
+    <button type="button" class="wg-item" data-full="03.jpg" aria-label="사진 3 확대 보기">
+      <img src="03.jpg" alt="Wedding photo 03" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
 
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
-      <img src="04.jpg" alt="Wedding gallery 04" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
-      <img src="05.jpg" alt="Wedding gallery 05" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
-      <img src="06.jpg" alt="Wedding gallery 06" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
+    <button type="button" class="wg-item" data-full="04.jpg" aria-label="사진 4 확대 보기">
+      <img src="04.jpg" alt="Wedding photo 04" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
+    <button type="button" class="wg-item" data-full="05.jpg" aria-label="사진 5 확대 보기">
+      <img src="05.jpg" alt="Wedding photo 05" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
+    <button type="button" class="wg-item" data-full="06.jpg" aria-label="사진 6 확대 보기">
+      <img src="06.jpg" alt="Wedding photo 06" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
 
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
-      <img src="07.jpg" alt="Wedding gallery 07" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
-      <img src="08.jpg" alt="Wedding gallery 08" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
-      <img src="09.jpg" alt="Wedding gallery 09" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
+    <button type="button" class="wg-item" data-full="07.jpg" aria-label="사진 7 확대 보기">
+      <img src="07.jpg" alt="Wedding photo 07" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
+    <button type="button" class="wg-item" data-full="08.jpg" aria-label="사진 8 확대 보기">
+      <img src="08.jpg" alt="Wedding photo 08" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
+    <button type="button" class="wg-item" data-full="09.jpg" aria-label="사진 9 확대 보기">
+      <img src="09.jpg" alt="Wedding photo 09" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
 
     <!-- 더보기 영역 -->
-    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
-      <img src="10.jpg" alt="Wedding gallery 10" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
-    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
-      <img src="11.jpg" alt="Wedding gallery 11" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
-    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
-      <img src="12.jpg" alt="Wedding gallery 12" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
+    <button type="button" class="wg-item wg-more" data-full="10.jpg" aria-label="사진 10 확대 보기" hidden>
+      <img src="10.jpg" alt="Wedding photo 10" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
+    <button type="button" class="wg-item wg-more" data-full="11.jpg" aria-label="사진 11 확대 보기" hidden>
+      <img src="11.jpg" alt="Wedding photo 11" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
+    <button type="button" class="wg-item wg-more" data-full="12.jpg" aria-label="사진 12 확대 보기" hidden>
+      <img src="12.jpg" alt="Wedding photo 12" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
 
-    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
-      <img src="13.jpg" alt="Wedding gallery 13" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
-    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
-      <img src="14.jpg" alt="Wedding gallery 14" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
-    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
-      <img src="15.jpg" alt="Wedding gallery 15" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
+    <button type="button" class="wg-item wg-more" data-full="13.jpg" aria-label="사진 13 확대 보기" hidden>
+      <img src="13.jpg" alt="Wedding photo 13" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
+    <button type="button" class="wg-item wg-more" data-full="14.jpg" aria-label="사진 14 확대 보기" hidden>
+      <img src="14.jpg" alt="Wedding photo 14" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
+    <button type="button" class="wg-item wg-more" data-full="15.jpg" aria-label="사진 15 확대 보기" hidden>
+      <img src="15.jpg" alt="Wedding photo 15" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
 
-    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
-      <img src="16.jpg" alt="Wedding gallery 16" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
-    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
-      <img src="17.jpg" alt="Wedding gallery 17" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
+    <button type="button" class="wg-item wg-more" data-full="16.jpg" aria-label="사진 16 확대 보기" hidden>
+      <img src="16.jpg" alt="Wedding photo 16" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
+    <button type="button" class="wg-item wg-more" data-full="17.jpg" aria-label="사진 17 확대 보기" hidden>
+      <img src="17.jpg" alt="Wedding photo 17" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
 
-    <!-- 요청 반영: 18번 사진 대신 13번 사진 사용 -->
-    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
-      <img src="13.jpg" alt="Wedding gallery 18 replaced with 13" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
+    <button type="button" class="wg-item wg-more" data-full="18.jpg" aria-label="사진 18 확대 보기" hidden>
+      <img src="18.jpg" alt="Wedding photo 18" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
 
-    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
-      <img src="19.jpg" alt="Wedding gallery 19" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
-    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
-      <img src="20.jpg" alt="Wedding gallery 20" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
+    <button type="button" class="wg-item wg-more" data-full="19.jpg" aria-label="사진 19 확대 보기" hidden>
+      <img src="19.jpg" alt="Wedding photo 19" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
+    <button type="button" class="wg-item wg-more" data-full="20.jpg" aria-label="사진 20 확대 보기" hidden>
+      <img src="20.jpg" alt="Wedding photo 20" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </button>
   </div>
 
-  <div class="more-wrap gallery-more-wrap-final">
-    <button
-      type="button"
-      class="more-btn gallery-more-btn-final"
-      id="galleryMoreBtnFinal"
-      onclick="toggleWeddingGalleryFinal()"
-      aria-expanded="false"
-    >
+  <div class="wg-more-wrap">
+    <button type="button" class="wg-more-btn" id="wgMoreBtn" aria-expanded="false">
       사진 더보기
     </button>
   </div>
 </section>
-<style>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="wg-lightbox" id="wgLightbox" hidden aria-modal="true" role="dialog">
+  <button type="button" class="wg-close" id="wgCloseBtn" aria-label="닫기">×</button>
+  <button type="button" class="wg-nav wg-prev" id="wgPrevBtn" aria-label="이전 사진">‹</button>
+
+  <div class="wg-stage">
+    <img id="wgLightboxImg" src="" alt="">
+  </div>
+
+  <button type="button" class="wg-nav wg-next" id="wgNextBtn" aria-label="다음 사진">›</button>
+  <div class="wg-caption" id="wgCaption">사진을 눌러 한 번 더 확대 / 축소할 수 있습니다.</div>
+</div>
+</section>
+
 /* ===== GALLERY FINAL FIX : NO CROP ===== */
 .gallery-final .gallery-grid-final{
   display:grid;
@@ -1173,6 +1180,210 @@ cursor:pointer;
 
 .hidden {
 display:none;
+}
+
+<style>
+/* ===== GALLERY UPGRADE ===== */
+.gallery-upgrade .wg-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:10px;
+  margin-top:22px;
+  align-items:start;
+}
+
+.gallery-upgrade .wg-item{
+  appearance:none;
+  -webkit-appearance:none;
+  width:100%;
+  margin:0;
+  padding:6px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:14px;
+  background:#f8f6f2;
+  aspect-ratio:4 / 5;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  cursor:zoom-in;
+  box-sizing:border-box;
+}
+
+.gallery-upgrade .wg-item img{
+  width:100%;
+  height:100%;
+  object-fit:contain;   /* 핵심: 사진 안 짤림 */
+  object-position:center;
+  display:block;
+  background:#f8f6f2;
+}
+
+.gallery-upgrade .wg-more-wrap{
+  text-align:center;
+  margin-top:18px;
+}
+
+.gallery-upgrade .wg-more-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:150px;
+  padding:12px 20px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.16);
+  background:rgba(255,255,255,.05);
+  color:#fff;
+  font-size:.92rem;
+  letter-spacing:.03em;
+  cursor:pointer;
+  transition:all .25s ease;
+}
+
+.gallery-upgrade .wg-more-btn:hover{
+  background:rgba(255,255,255,.12);
+  transform:translateY(-1px);
+}
+
+/* ===== LIGHTBOX ===== */
+body.wg-no-scroll{
+  overflow:hidden;
+}
+
+.wg-lightbox[hidden]{
+  display:none !important;
+}
+
+.wg-lightbox{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  background:rgba(10, 12, 18, .92);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.wg-stage{
+  width:min(92vw, 1200px);
+  height:min(84vh, 920px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  box-sizing:border-box;
+}
+
+#wgLightboxImg{
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;   /* 확대창에서도 안 짤림 */
+  object-position:center;
+  display:block;
+  cursor:zoom-in;
+  transition:transform .25s ease;
+  transform-origin:center center;
+}
+
+#wgLightboxImg.is-zoomed{
+  transform:scale(1.8);
+  cursor:zoom-out;
+}
+
+.wg-close,
+.wg-nav{
+  appearance:none;
+  -webkit-appearance:none;
+  border:none;
+  background:rgba(255,255,255,.12);
+  color:#fff;
+  cursor:pointer;
+}
+
+.wg-close{
+  position:absolute;
+  top:20px;
+  right:20px;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  font-size:28px;
+  line-height:44px;
+}
+
+.wg-nav{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:48px;
+  height:56px;
+  border-radius:14px;
+  font-size:34px;
+  line-height:1;
+}
+
+.wg-prev{ left:20px; }
+.wg-next{ right:20px; }
+
+.wg-caption{
+  position:absolute;
+  left:50%;
+  bottom:18px;
+  transform:translateX(-50%);
+  color:rgba(255,255,255,.88);
+  font-size:.88rem;
+  letter-spacing:.02em;
+  text-align:center;
+  padding:8px 14px;
+  border-radius:999px;
+  background:rgba(255,255,255,.08);
+  white-space:nowrap;
+}
+
+@media (max-width:768px){
+  .gallery-upgrade .wg-grid{
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:6px;
+  }
+
+  .gallery-upgrade .wg-item{
+    padding:4px;
+    border-radius:10px;
+    aspect-ratio:4 / 5;
+  }
+
+  .gallery-upgrade .wg-more-btn{
+    min-width:136px;
+    padding:11px 16px;
+    font-size:.86rem;
+  }
+
+  .wg-stage{
+    width:100vw;
+    height:80vh;
+    padding:18px;
+  }
+
+  .wg-nav{
+    width:42px;
+    height:50px;
+    font-size:28px;
+  }
+
+  .wg-prev{ left:10px; }
+  .wg-next{ right:10px; }
+
+  .wg-close{
+    top:12px;
+    right:12px;
+  }
+
+  .wg-caption{
+    bottom:14px;
+    font-size:.78rem;
+    white-space:normal;
+    width:calc(100% - 32px);
+  }
 }
 </style>
 
@@ -1520,6 +1731,113 @@ document.addEventListener('DOMContentLoaded', function(){
   const btn = document.getElementById('galleryMoreBtnFinal');
   if(grid) grid.classList.remove('is-open');
   if(btn) btn.setAttribute('aria-expanded', 'false');
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const grid = document.getElementById('wgGrid');
+  const moreBtn = document.getElementById('wgMoreBtn');
+  const moreItems = Array.from(document.querySelectorAll('.wg-more'));
+
+  const lightbox = document.getElementById('wgLightbox');
+  const lightboxImg = document.getElementById('wgLightboxImg');
+  const caption = document.getElementById('wgCaption');
+  const closeBtn = document.getElementById('wgCloseBtn');
+  const prevBtn = document.getElementById('wgPrevBtn');
+  const nextBtn = document.getElementById('wgNextBtn');
+
+  if (!grid) return;
+
+  const allItems = Array.from(grid.querySelectorAll('.wg-item'));
+  let currentIndex = 0;
+
+  // 초기 상태: 더보기 항목 숨김
+  moreItems.forEach(item => item.hidden = true);
+
+  // 더보기 버튼
+  if (moreBtn) {
+    moreBtn.addEventListener('click', function () {
+      const isOpen = moreBtn.getAttribute('aria-expanded') === 'true';
+      const nextState = !isOpen;
+
+      moreItems.forEach(item => {
+        item.hidden = !nextState;
+      });
+
+      moreBtn.setAttribute('aria-expanded', String(nextState));
+      moreBtn.textContent = nextState ? '사진 접기' : '사진 더보기';
+    });
+  }
+
+  function renderLightbox(index) {
+    const item = allItems[index];
+    if (!item) return;
+
+    const img = item.querySelector('img');
+    const src = item.getAttribute('data-full') || (img ? img.getAttribute('src') : '');
+    const alt = img ? img.getAttribute('alt') : '';
+
+    currentIndex = index;
+    lightboxImg.classList.remove('is-zoomed');
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || `Wedding photo ${index + 1}`;
+    caption.textContent = `${index + 1} / ${allItems.length} · 사진을 눌러 한 번 더 확대 / 축소할 수 있습니다.`;
+  }
+
+  function openLightbox(index) {
+    renderLightbox(index);
+    lightbox.hidden = false;
+    document.body.classList.add('wg-no-scroll');
+  }
+
+  function closeLightbox() {
+    lightbox.hidden = true;
+    lightboxImg.classList.remove('is-zoomed');
+    document.body.classList.remove('wg-no-scroll');
+  }
+
+  function moveLightbox(step) {
+    currentIndex = (currentIndex + step + allItems.length) % allItems.length;
+    renderLightbox(currentIndex);
+  }
+
+  // 갤러리 클릭 시 확대
+  grid.addEventListener('click', function (e) {
+    const button = e.target.closest('.wg-item');
+    if (!button) return;
+
+    const index = allItems.indexOf(button);
+    if (index > -1) openLightbox(index);
+  });
+
+  // 닫기 / 이전 / 다음
+  if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+  if (prevBtn) prevBtn.addEventListener('click', function () { moveLightbox(-1); });
+  if (nextBtn) nextBtn.addEventListener('click', function () { moveLightbox(1); });
+
+  // 배경 클릭 닫기
+  if (lightbox) {
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+  }
+
+  // 이미지 클릭 확대/축소
+  if (lightboxImg) {
+    lightboxImg.addEventListener('click', function (e) {
+      e.stopPropagation();
+      lightboxImg.classList.toggle('is-zoomed');
+    });
+  }
+
+  // 키보드 제어
+  document.addEventListener('keydown', function (e) {
+    if (lightbox.hidden) return;
+
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') moveLightbox(-1);
+    if (e.key === 'ArrowRight') moveLightbox(1);
+  });
 });
 </script>
 </body>
