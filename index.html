@@ -179,6 +179,22 @@ body{
   color:var(--muted);
   line-height:1.8;
 }
+/* ===== FLOWER DECLINE MESSAGE ===== */
+.decline-flower-box{
+  max-width:680px;
+  margin:22px auto 0;
+  padding:28px 24px;
+  border-radius:22px;
+  background:linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,248,244,.92));
+  border:1px solid rgba(210, 188, 176, .45);
+  box-shadow:0 12px 30px rgba(120, 96, 88, .08);
+  text-align:center;
+  color:#6c5a55;
+  font-family:var(--font-kr, 'Nanum Myeongjo', serif);
+  font-size:1rem;
+  line-height:2.0;
+  letter-spacing:.02em;
+}
 /* ── NAV ── */
 .nav{
   position:fixed;top:0;left:50%;transform:translateX(-50%);
@@ -909,7 +925,7 @@ and bless this special day.</p>
     <span class="parent-name">태혜신</span>
     <a class="parent-call" href="tel:010-2813-6458">📞 연락하기</a>
   </div>
-  <span class="parent-eng">Tae Hye-shin</span>
+  <span class="parent-eng">Tae Hyae-shin</span>
 </div>
         
       </div>
@@ -969,41 +985,26 @@ and bless this special day.</p>
     <div class="gc" onclick="if(window.openLB){openLB(this);}">
       <img src="03.jpg" alt="Wedding gallery 03" loading="lazy" onerror="this.parentElement.style.display='none'">
     </div>
-
     <div class="gc" onclick="if(window.openLB){openLB(this);}">
       <img src="04.jpg" alt="Wedding gallery 04" loading="lazy" onerror="this.parentElement.style.display='none'">
     </div>
     <div class="gc" onclick="if(window.openLB){openLB(this);}">
-      <img src="05.jpg" alt="Wedding gallery 05" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
       <img src="06.jpg" alt="Wedding gallery 06" loading="lazy" onerror="this.parentElement.style.display='none'">
     </div>
-
     <div class="gc" onclick="if(window.openLB){openLB(this);}">
       <img src="07.jpg" alt="Wedding gallery 07" loading="lazy" onerror="this.parentElement.style.display='none'">
     </div>
     <div class="gc" onclick="if(window.openLB){openLB(this);}">
-      <img src="08.jpg" alt="Wedding gallery 08" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
       <img src="09.jpg" alt="Wedding gallery 09" loading="lazy" onerror="this.parentElement.style.display='none'">
     </div>
-
-    <!-- 더보기 영역 -->
     <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
       <img src="10.jpg" alt="Wedding gallery 10" loading="lazy" onerror="this.parentElement.style.display='none'">
     </div>
     <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
-      <img src="11.jpg" alt="Wedding gallery 11" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
-    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
       <img src="12.jpg" alt="Wedding gallery 12" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
+    </div> 
 
-    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
-      <img src="13.jpg" alt="Wedding gallery 13" loading="lazy" onerror="this.parentElement.style.display='none'">
-    </div>
+    <!-- 더보기 영역 -->
     <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
       <img src="14.jpg" alt="Wedding gallery 14" loading="lazy" onerror="this.parentElement.style.display='none'">
     </div>
@@ -1199,11 +1200,11 @@ document.getElementById("lightbox-img").src = img.src;
 function closeLightbox(){
 document.getElementById("lightbox").style.display="none";
 }
-</script><!-- ════ VENUE ════ -->
+</script>
 <!-- ════ VENUE ════ -->
 <section class="sec sec-alt rv">
   <span class="script-head">오시는 길</span>
-  <span class="kr-head">엘타워 오르체홀 · 5F Orce Hall</span>
+  <span class="kr-head">엘타워 5층 오르체홀 · 5F Orce Hall El Tower</span>
   <span class="en-head">El Tower · 서울특별시 서초구 강남대로 213-1 · 5층 오르체홀</span>
 
   <div style="width:100%; margin:0; padding:0; border-radius:18px; overflow:hidden;">
@@ -1276,8 +1277,8 @@ document.getElementById("lightbox").style.display="none";
     <div class="acc-item">
       <div>
         <div class="acc-who">신부 어머니 · BRIDE'S MOTHER</div>
-        <div class="acc-name">태혜신 · Hye-Syn Tae</div>
-        <div class="acc-bank">기업은행 · 073082-700010-22</div>
+        <div class="acc-name">태혜신 · Hyae-Syn Tae</div>
+        <div class="acc-bank">기업은행 · 073-082700-01-015</div>
       </div>
       <button class="btn-copy" onclick="cp(&#39;073082-700010-22&#39;)">복사</button>
     </div>
@@ -1285,33 +1286,16 @@ document.getElementById("lightbox").style.display="none";
 </section>
 
 <section class="sec sec-alt rv">
-  <span class="script-head">축하화환 보내기</span>
-  <div class="poem" style="margin-top:18px">
-    따로 정보를 입력할 필요없이 예식 일시에 맞춰 웨딩홀로 배송됩니다.<br>
-    간편하게 축하의 마음을 전해보세요.<br><br>
-
-    2026년 6월 28일 일요일 오전 11시<br>
-    서울시 서초구 강남대로 213-1<br>
-    엘타워 5층 오르체홀
+  <span class="script-head">안내 말씀</span>
+  <span class="en-head">With Gratitude</span>
+  <div class="decline-flower-box">
+    축하의 마음만 감사히 받겠습니다.<br><br>
+    예식 공간과 준비 일정상<br>
+    화환은 정중히 사양하오니,<br>
+    따뜻한 축복으로 함께해 주시면<br>
+    더없는 기쁨이 되겠습니다.
   </div>
-<div style="text-align:center; margin-top:30px;">
-  <a href="https://shop5.flowerbiz.co.kr" target="_blank"
-     style="
-       display:inline-block;
-       padding:15px 30px;
-       background:#e8cfcf;
-       color:#333;
-       font-size:18px;
-       border-radius:30px;
-       text-decoration:none;
-       font-weight:bold;
-       box-shadow:0 4px 10px rgba(0,0,0,0.1);
-     ">
-     💐 축하화환 보내기
-  </a>
-</div>
-</section>
-<!-- ════ GUESTBOOK ════ -->
+</section><!-- ════ GUESTBOOK ════ -->
 <section class="sec rv in">
   <span class="script-head">방명록</span>
   <span class="en-head">Guestbook · Leave a heartfelt message</span>
