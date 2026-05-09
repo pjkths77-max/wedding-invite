@@ -752,6 +752,153 @@ footer p{font-size:0.66rem;color:rgba(255,255,255,.28);line-height:2;letter-spac
   .story-grid{grid-template-columns:1fr;}
 }
 </style>
+<style>
+/* ===== CONTACT / ACCOUNT BRIGHT UI ===== */
+.contact-bright,
+.account-bright{
+  position:relative;
+  background:linear-gradient(180deg, #f8fbff 0%, #edf4ff 100%) !important;
+  color:#30425e !important;
+}
+
+.contact-bright::before,
+.account-bright::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(173, 201, 255, .18) 0%, transparent 28%),
+    radial-gradient(circle at 82% 16%, rgba(208, 224, 255, .20) 0%, transparent 26%),
+    radial-gradient(circle at 50% 85%, rgba(240, 246, 255, .55) 0%, transparent 36%);
+  pointer-events:none;
+}
+
+.contact-bright > *,
+.account-bright > *{
+  position:relative;
+  z-index:1;
+}
+
+.contact-bright .script-head,
+.account-bright .script-head{
+  color:#476285 !important;
+  font-size:1.15rem !important;
+  font-weight:800 !important;
+  text-shadow:none !important;
+}
+
+.contact-bright .kr-head,
+.account-bright .kr-head{
+  color:#28405f !important;
+  font-size:1.08rem !important;
+  font-weight:700 !important;
+  text-shadow:none !important;
+}
+
+.contact-bright .en-head,
+.account-bright .en-head{
+  color:#6b7f9d !important;
+  font-size:.98rem !important;
+  text-shadow:none !important;
+}
+
+.contact-bright,
+.account-bright{
+  font-size:16.5px !important;
+  line-height:1.85 !important;
+}
+
+.contact-bright p,
+.contact-bright li,
+.contact-bright span,
+.contact-bright div,
+.account-bright p,
+.account-bright li,
+.account-bright span,
+.account-bright div{
+  color:#3a4f6c !important;
+  text-shadow:none !important;
+}
+
+.contact-bright strong,
+.contact-bright .name,
+.contact-bright .parent-name,
+.contact-bright .contact-name,
+.account-bright strong,
+.account-bright .name,
+.account-bright .account-name,
+.account-bright .bank-name,
+.account-bright .owner-name{
+  color:#233652 !important;
+  font-size:1.08rem !important;
+  font-weight:800 !important;
+}
+
+.contact-bright .phone,
+.contact-bright .tel,
+.contact-bright .number,
+.account-bright .account-number,
+.account-bright .bank-number,
+.account-bright .acc-num{
+  color:#425b7d !important;
+  font-size:1rem !important;
+  font-weight:600 !important;
+}
+
+.contact-bright a,
+.contact-bright button,
+.account-bright a,
+.account-bright button{
+  font-size:.96rem !important;
+}
+
+.contact-bright .call-btn,
+.contact-bright .contact-btn,
+.contact-bright a[href^="tel:"],
+.account-bright .copy-btn,
+.account-bright .account-copy,
+.account-bright button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  padding:10px 14px !important;
+  border-radius:999px !important;
+  border:1px solid rgba(100, 130, 175, .20) !important;
+  background:linear-gradient(180deg, #ffffff 0%, #eef5ff 100%) !important;
+  color:#35527a !important;
+  box-shadow:0 6px 16px rgba(82, 104, 145, .10) !important;
+  text-decoration:none !important;
+}
+
+.contact-bright .call-btn:hover,
+.contact-bright .contact-btn:hover,
+.contact-bright a[href^="tel:"]:hover,
+.account-bright .copy-btn:hover,
+.account-bright .account-copy:hover,
+.account-bright button:hover{
+  background:linear-gradient(180deg, #f7fbff 0%, #e7f0ff 100%) !important;
+  color:#234165 !important;
+  transform:translateY(-1px);
+}
+
+@media (max-width:768px){
+  .contact-bright,
+  .account-bright{
+    font-size:15.8px !important;
+  }
+
+  .contact-bright .script-head,
+  .account-bright .script-head{
+    font-size:1.04rem !important;
+  }
+
+  .contact-bright .kr-head,
+  .account-bright .kr-head{
+    font-size:1rem !important;
+  }
+}
+</style>
 </head>
 <body>
 
@@ -870,7 +1017,7 @@ and bless this special day.</p>
   </div>
 </section>
 <!-- ════ COUPLE PROFILES ════ -->
-<section class="sec rv contact-bright">
+<section class="sec sec-alt rv in">
   <span class="script-head">신랑 &amp; 신부</span>
   <span class="en-head">Groom &amp; Bride</span>
   <div class="couple-row">
@@ -1543,8 +1690,6 @@ document.addEventListener('DOMContentLoaded', function(){
 .music-toggle:hover{transform:translateY(-1px);}
 .music-toggle.is-playing{background:rgba(74, 108, 163, .92);}
 </style>
-
-<style>
 /* ===== CONTACT / ACCOUNT BRIGHT UI ===== */
 .contact-bright,
 .account-bright{
@@ -1738,7 +1883,6 @@ document.addEventListener('DOMContentLoaded', function(){
     font-size:1.02rem !important;
   }
 }
-</style>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const audio = document.getElementById('bgm');
