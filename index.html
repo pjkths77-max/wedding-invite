@@ -1543,7 +1543,199 @@ document.addEventListener('DOMContentLoaded', function(){
 .music-toggle:hover{transform:translateY(-1px);}
 .music-toggle.is-playing{background:rgba(74, 108, 163, .92);}
 </style>
+/* ===== CONTACT / ACCOUNT BRIGHT UI ===== */
+.contact-bright,
+.account-bright{
+  position:relative;
+  background:linear-gradient(180deg, #f8fbff 0%, #edf4ff 100%) !important;
+  color:#30425e !important;
+}
 
+.contact-bright::before,
+.account-bright::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(173, 201, 255, .18) 0%, transparent 28%),
+    radial-gradient(circle at 82% 16%, rgba(208, 224, 255, .20) 0%, transparent 26%),
+    radial-gradient(circle at 50% 85%, rgba(240, 246, 255, .55) 0%, transparent 36%);
+  pointer-events:none;
+}
+
+.contact-bright > *,
+.account-bright > *{
+  position:relative;
+  z-index:1;
+}
+
+/* 섹션 제목 */
+.contact-bright .script-head,
+.account-bright .script-head{
+  color:#476285 !important;
+  font-size:1.12rem !important;
+  font-weight:800 !important;
+  letter-spacing:.08em !important;
+  text-shadow:none !important;
+}
+
+.contact-bright .kr-head,
+.account-bright .kr-head{
+  color:#28405f !important;
+  font-size:1.08rem !important;
+  font-weight:700 !important;
+  text-shadow:none !important;
+}
+
+.contact-bright .en-head,
+.account-bright .en-head{
+  color:#6b7f9d !important;
+  font-size:.96rem !important;
+  text-shadow:none !important;
+}
+
+/* 내부 카드 / 행 / 박스 밝게 */
+.contact-bright .card,
+.contact-bright .contact-card,
+.contact-bright .parent-card,
+.contact-bright .parent-row,
+.contact-bright .contact-row,
+.contact-bright .box,
+.contact-bright .item,
+.account-bright .card,
+.account-bright .account-card,
+.account-bright .account-row,
+.account-bright .bank-card,
+.account-bright .box,
+.account-bright .item{
+  background:rgba(255,255,255,.92) !important;
+  border:1px solid rgba(110, 138, 182, .18) !important;
+  border-radius:18px !important;
+  box-shadow:0 10px 26px rgba(72, 98, 142, .10) !important;
+  color:#334865 !important;
+}
+
+/* 내부 텍스트 전체 가독성 업 */
+.contact-bright,
+.account-bright{
+  font-size:16.5px !important;
+  line-height:1.8 !important;
+}
+
+.contact-bright p,
+.contact-bright li,
+.contact-bright span,
+.contact-bright div,
+.account-bright p,
+.account-bright li,
+.account-bright span,
+.account-bright div{
+  color:#3a4f6c !important;
+  text-shadow:none !important;
+}
+
+/* 이름 / 은행명 / 계좌명 등 더 크게 */
+.contact-bright strong,
+.contact-bright .name,
+.contact-bright .parent-name,
+.contact-bright .contact-name,
+.account-bright strong,
+.account-bright .name,
+.account-bright .account-name,
+.account-bright .bank-name,
+.account-bright .owner-name{
+  color:#233652 !important;
+  font-size:1.08rem !important;
+  font-weight:800 !important;
+}
+
+/* 전화번호 / 계좌번호 */
+.contact-bright .phone,
+.contact-bright .tel,
+.contact-bright .number,
+.account-bright .account-number,
+.account-bright .bank-number,
+.account-bright .acc-num{
+  color:#425b7d !important;
+  font-size:1rem !important;
+  font-weight:600 !important;
+  letter-spacing:.01em !important;
+}
+
+/* 연락하기 / 복사 버튼 밝게 */
+.contact-bright a,
+.contact-bright button,
+.account-bright a,
+.account-bright button{
+  font-size:.96rem !important;
+}
+
+.contact-bright .call-btn,
+.contact-bright .contact-btn,
+.contact-bright a[href^="tel:"],
+.account-bright .copy-btn,
+.account-bright .account-copy,
+.account-bright button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  padding:10px 14px !important;
+  border-radius:999px !important;
+  border:1px solid rgba(100, 130, 175, .20) !important;
+  background:linear-gradient(180deg, #ffffff 0%, #eef5ff 100%) !important;
+  color:#35527a !important;
+  box-shadow:0 6px 16px rgba(82, 104, 145, .10) !important;
+  text-decoration:none !important;
+}
+
+.contact-bright .call-btn:hover,
+.contact-bright .contact-btn:hover,
+.contact-bright a[href^="tel:"]:hover,
+.account-bright .copy-btn:hover,
+.account-bright .account-copy:hover,
+.account-bright button:hover{
+  background:linear-gradient(180deg, #f7fbff 0%, #e7f0ff 100%) !important;
+  color:#234165 !important;
+  transform:translateY(-1px);
+}
+
+/* 구분선이 너무 어두우면 연하게 */
+.contact-bright hr,
+.account-bright hr{
+  border:none;
+  border-top:1px solid rgba(113, 140, 182, .18) !important;
+}
+
+/* 모바일에서도 글자 너무 작지 않게 */
+@media (max-width:768px){
+  .contact-bright,
+  .account-bright{
+    font-size:15.8px !important;
+  }
+
+  .contact-bright .script-head,
+  .account-bright .script-head{
+    font-size:1.04rem !important;
+  }
+
+  .contact-bright .kr-head,
+  .account-bright .kr-head{
+    font-size:1rem !important;
+  }
+
+  .contact-bright strong,
+  .contact-bright .name,
+  .contact-bright .parent-name,
+  .contact-bright .contact-name,
+  .account-bright strong,
+  .account-bright .name,
+  .account-bright .account-name,
+  .account-bright .bank-name,
+  .account-bright .owner-name{
+    font-size:1.02rem !important;
+  }
+}
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const audio = document.getElementById('bgm');
