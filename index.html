@@ -1269,7 +1269,7 @@ document.getElementById("lightbox").style.display="none";
       <div>
         <div class="acc-who">신부 아버지 · BRIDE'S FATHER</div>
         <div class="acc-name">박진경 · Jin-kyung Park</div>
-        <div class="acc-bank">우리은행 · 1002-053-811949</div>
+        <div class="acc-bank">우리은행 · 1002-267-430244</div>
       </div>
       <button class="btn-copy" onclick="cp(&#39;1002-053-811949&#39;)">복사</button>
     </div>
@@ -1514,6 +1514,70 @@ document.addEventListener('DOMContentLoaded', function(){
   const btn = document.getElementById('galleryMoreBtnFinal');
   if(grid) grid.classList.remove('is-open');
   if(btn) btn.setAttribute('aria-expanded', 'false');
+});
+</script>
+<audio id="bgm" loop preload="auto">
+  <source src="./faespencer-heart-full-of-love-instrumental-207269.mp3" type="audio/mpeg">
+</audio>
+
+<button type="button" id="musicToggle" class="music-toggle" aria-label="배경음악 재생 또는 정지">
+  ♫ 음악 재생
+</button>
+
+<style>
+.music-toggle{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:9999;
+  padding:12px 16px;
+  border:none;
+  border-radius:999px;
+  background:rgba(36, 54, 82, .88);
+  color:#fff;
+  font-size:14px;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(0,0,0,.18);
+  transition:all .25s ease;
+}
+.music-toggle:hover{transform:translateY(-1px);}
+.music-toggle.is-playing{background:rgba(74, 108, 163, .92);}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const audio = document.getElementById('bgm');
+  const btn = document.getElementById('musicToggle');
+
+  async function playMusic() {
+    try {
+      await audio.play();
+      btn.classList.add('is-playing');
+      btn.textContent = '♫ 음악 정지';
+    } catch (e) {
+      btn.classList.remove('is-playing');
+      btn.textContent = '♫ 음악 재생';
+    }
+  }
+
+  function stopMusic() {
+    audio.pause();
+    btn.classList.remove('is-playing');
+    btn.textContent = '♫ 음악 재생';
+  }
+
+  btn.addEventListener('click', function () {
+    if (audio.paused) playMusic();
+    else stopMusic();
+  });
+
+  document.addEventListener('click', function initPlay() {
+    if (audio.paused) playMusic();
+  }, { once:true });
+
+  document.addEventListener('touchstart', function initPlay() {
+    if (audio.paused) playMusic();
+  }, { once:true });
 });
 </script>
 </body>
