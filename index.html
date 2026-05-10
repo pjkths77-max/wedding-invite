@@ -1050,36 +1050,39 @@ and bless this special day.</p>
     <div class="gc" onclick="if(window.openLB){openLB(this);}">
       <img src="09.jpg" alt="Wedding gallery 09" loading="lazy" decoding="async" onerror="this.parentElement.style.display='none'">
     </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
+    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
       <img src="10.jpg" alt="Wedding gallery 10" loading="lazy" decoding="async" onerror="this.parentElement.style.display='none'">
     </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
+    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
       <img src="11.jpg" alt="Wedding gallery 11" loading="lazy" decoding="async" onerror="this.parentElement.style.display='none'">
     </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
+    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
       <img src="12.jpg" alt="Wedding gallery 12" loading="lazy" decoding="async" onerror="this.parentElement.style.display='none'">
     </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
+    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
       <img src="14.jpg" alt="Wedding gallery 14" loading="lazy" decoding="async" onerror="this.parentElement.style.display='none'">
     </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
+    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
       <img src="15.jpg" alt="Wedding gallery 15" loading="lazy" decoding="async" onerror="this.parentElement.style.display='none'">
     </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
+    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
       <img src="16.jpg" alt="Wedding gallery 16" loading="lazy" decoding="async" onerror="this.parentElement.style.display='none'">
     </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
+    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
       <img src="17.jpg" alt="Wedding gallery 17" loading="lazy" decoding="async" onerror="this.parentElement.style.display='none'">
     </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
+    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
       <img src="18.jpg" alt="Wedding gallery 18" loading="lazy" decoding="async" onerror="this.parentElement.style.display='none'">
     </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
+    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
       <img src="19.jpg" alt="Wedding gallery 19" loading="lazy" decoding="async" onerror="this.parentElement.style.display='none'">
     </div>
-    <div class="gc" onclick="if(window.openLB){openLB(this);}">
+    <div class="gc gallery-more-item" onclick="if(window.openLB){openLB(this);}">
       <img src="20.jpg" alt="Wedding gallery 20" loading="lazy" decoding="async" onerror="this.parentElement.style.display='none'">
     </div>
+  </div>
+  <div class="gallery-more-wrap-final">
+    <button type="button" class="gallery-more-btn-final" id="galleryMoreBtnFinal" onclick="toggleWeddingGalleryFinal()" aria-expanded="false">사진 더보기</button>
   </div>
 </section>
 <style>
@@ -1119,6 +1122,40 @@ and bless this special day.</p>
 
 .gallery-final .gc:hover img{
   transform:none;       /* hover 시 잘리는 현상 방지 */
+}
+
+
+.gallery-final .gallery-more-item{
+  display:none;
+}
+.gallery-final .gallery-grid-final.is-open .gallery-more-item{
+  display:flex;
+}
+.gallery-final .gallery-more-wrap-final{
+  text-align:center;
+  margin-top:18px;
+}
+.gallery-final .gallery-more-btn-final{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:160px;
+  padding:12px 22px;
+  border-radius:999px;
+  border:1px solid var(--sky);
+  background:rgba(135,206,235,.10);
+  color:var(--skybright);
+  font-size:.92rem;
+  font-family:var(--font-kr);
+  letter-spacing:.04em;
+  cursor:pointer;
+  transition:all .25s ease;
+}
+.gallery-final .gallery-more-btn-final:hover,
+.gallery-final .gallery-more-btn-final:active{
+  background:var(--sky);
+  color:var(--bg);
+  transform:translateY(-1px);
 }
 
 @media (max-width:768px){
@@ -1252,9 +1289,9 @@ function closeLightbox(){
 <section class="sec sec-alt rv account-bright">
   <span class="script-head">마음 전하실 곳</span>
   <span class="en-head">Wishing Well · 축의금 계좌</span>
-  <p style="text-align:center;font-size:.83rem;color:var(--off);line-height:2.1;margin-bottom:0">
+  <p style="text-align:center;font-size:.95rem;color:#ffffff;line-height:2.1;margin-bottom:0;font-weight:700;letter-spacing:0.02em;text-shadow:0 1px 2px rgba(0,0,0,0.25)">
     멀리서도 축하의 마음을 전하고 싶으신 분들을 위해<br>계좌번호를 안내드립니다.<br>
-    <span style="font-family:&#39;Cormorant Garamond&#39;,serif;font-style:italic;font-size:.88em;color:var(--accent)">
+    <span style="font-family:&#39;Cormorant Garamond&#39;,serif;font-style:italic;font-size:.92em;color:var(--skybright);font-weight:600">
       We are deeply grateful for your warm wishes.<br>
      소중한 축하를 보내주신 따뜻한 마음에 깊이 감사드립니다.
     </span>
@@ -1456,6 +1493,21 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 </script>
 
+<script>
+function toggleWeddingGalleryFinal(){
+  var grid = document.getElementById('galleryGridFinal');
+  var btn  = document.getElementById('galleryMoreBtnFinal');
+  if(!grid || !btn) return;
+  var isOpen = grid.classList.toggle('is-open');
+  btn.textContent = isOpen ? '사진 접기' : '사진 더보기';
+  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  if(!isOpen){
+    // 접을 때 갤러리 상단으로 자연스럽게 이동
+    var sec = grid.closest('section');
+    if(sec){ sec.scrollIntoView({behavior:'smooth', block:'start'}); }
+  }
+}
+</script>
 <audio id="bgm" loop preload="auto">
   <source src="./faespencer-heart-full-of-love-instrumental-207269.mp3" type="audio/mpeg">
 </audio>
