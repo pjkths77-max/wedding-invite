@@ -552,9 +552,23 @@ body{
 .acc-list{display:flex;flex-direction:column;gap:11px;margin-top:22px}
 .acc-item{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:3px;
   padding:15px 16px;display:flex;align-items:center;justify-content:space-between}
-.acc-who{font-size:0.6rem;letter-spacing:0.2em;color:var(--accent);margin-bottom:3px}
-.acc-name{font-size:0.9rem;color:var(--white)}
-.acc-bank{font-size:0.7rem;color:var(--muted);margin-top:2px}
+.acc-who{font-size:0.62rem;letter-spacing:0.2em;color:var(--accent);margin-bottom:4px;font-weight:600}
+.acc-name{
+  font-size:1.05rem;
+  color:#ffffff;
+  font-weight:800;
+  letter-spacing:0.03em;
+  font-family:var(--font-kr);
+  text-shadow:0 1px 2px rgba(0,0,0,0.25);
+}
+.acc-bank{
+  font-size:0.92rem;
+  color:var(--skybright);
+  margin-top:5px;
+  font-weight:700;
+  letter-spacing:0.02em;
+  font-family:var(--font-kr);
+}
 .btn-copy{padding:6px 13px;border:1px solid var(--border);border-radius:20px;
   background:none;color:var(--sky);font-size:0.68rem;cursor:pointer;
   font-family:var(--font-kr);transition:all .2s;white-space:nowrap;letter-spacing:0.07em}
@@ -1628,7 +1642,7 @@ function toggleWeddingGalleryFinal(){
   text-shadow:none !important;
 }
 
-/* 이름 / 은행명 / 계좌명 등 더 크게 */
+/* 이름 / 은행명 / 계좌명 등 더 크게 + 진하게 (가독성 강화) */
 .contact-bright strong,
 .contact-bright .name,
 .contact-bright .parent-name,
@@ -1637,23 +1651,28 @@ function toggleWeddingGalleryFinal(){
 .account-bright .name,
 .account-bright .account-name,
 .account-bright .bank-name,
-.account-bright .owner-name{
-  color:#233652 !important;
-  font-size:1.08rem !important;
-  font-weight:800 !important;
+.account-bright .owner-name,
+.account-bright .acc-name{
+  color:#0e1e2a !important;
+  font-size:1.18rem !important;
+  font-weight:900 !important;
+  letter-spacing:.02em !important;
+  font-family:var(--font-kr) !important;
 }
 
-/* 전화번호 / 계좌번호 */
+/* 전화번호 / 계좌번호 진하게 강조 */
 .contact-bright .phone,
 .contact-bright .tel,
 .contact-bright .number,
 .account-bright .account-number,
 .account-bright .bank-number,
-.account-bright .acc-num{
-  color:#425b7d !important;
-  font-size:1rem !important;
-  font-weight:600 !important;
-  letter-spacing:.01em !important;
+.account-bright .acc-num,
+.account-bright .acc-bank{
+  color:#1a2b44 !important;
+  font-size:1.05rem !important;
+  font-weight:800 !important;
+  letter-spacing:.03em !important;
+  font-family:var(--font-kr) !important;
 }
 
 /* 연락하기 / 복사 버튼 밝게 */
@@ -1726,8 +1745,16 @@ function toggleWeddingGalleryFinal(){
   .account-bright .name,
   .account-bright .account-name,
   .account-bright .bank-name,
-  .account-bright .owner-name{
-    font-size:1.02rem !important;
+  .account-bright .owner-name,
+  .account-bright .acc-name{
+    font-size:1.12rem !important;
+    font-weight:900 !important;
+    color:#0e1e2a !important;
+  }
+  .account-bright .acc-bank{
+    font-size:1rem !important;
+    font-weight:800 !important;
+    color:#1a2b44 !important;
   }
 }
 </style>
