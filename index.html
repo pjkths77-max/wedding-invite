@@ -1773,5 +1773,18 @@ document.addEventListener('DOMContentLoaded', function () {
   if (moreWrap) moreWrap.remove();
 });
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // 1) 숨겨진 갤러리 항목 모두 보이기
+  document.querySelectorAll('#wgGrid .wg-more').forEach(function (item) {
+    item.hidden = false;
+    item.classList.remove('wg-more');
+  });
+
+  // 2) 더보기 버튼 영역 삭제
+  const moreWrap = document.querySelector('.wg-more-wrap');
+  if (moreWrap) moreWrap.remove();
+});
+</script>
 </body>
 </html>
