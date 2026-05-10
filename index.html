@@ -1763,5 +1763,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }, { once:true });
 });
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('#wgGrid .wg-more').forEach(function (item) {
+    item.hidden = false;
+    item.classList.remove('wg-more');
+  });
+  const moreWrap = document.querySelector('.wg-more-wrap');
+  if (moreWrap) moreWrap.remove();
+});
+</script>
 </body>
 </html>
