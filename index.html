@@ -2382,6 +2382,62 @@ function toggleWeddingGalleryFinal(){
     align-self:flex-end !important;
   }
 }
+/* ===== account section final override ===== */
+
+/* 1) "마음 전하실 곳" = "안내 말씀"과 같은 크기 */
+.account-bright .script-head{
+  font-size:1.7rem !important;
+  line-height:1.2 !important;
+  margin-bottom:8px !important;
+}
+
+/* 부제목 간격도 너무 벌어지지 않게 */
+.account-bright .en-head{
+  margin-bottom:14px !important;
+}
+
+/* 2) 계좌번호 + 복사버튼을 중앙에 가깝게 붙이기 */
+.acc-family-bankline{
+  display:flex !important;
+  justify-content:center !important;
+  align-items:center !important;
+  gap:6px !important;
+  flex-wrap:wrap !important;
+  text-align:center !important;
+}
+
+.acc-family-bank{
+  flex:0 0 auto !important;
+  text-align:center !important;
+  margin:0 !important;
+}
+
+/* 버튼도 계좌번호 옆에 자연스럽게 */
+.acc-family-bankline .btn-copy{
+  margin:0 !important;
+  padding:7px 12px !important;
+  border-radius:12px !important;
+}
+
+/* 모바일에서도 세로로 떨어지지 않게 */
+@media (max-width:430px){
+  .acc-family-bankline{
+    flex-direction:row !important;
+    justify-content:center !important;
+    align-items:center !important;
+    gap:6px !important;
+  }
+
+  .acc-family-bank{
+    width:auto !important;
+    text-align:center !important;
+  }
+
+  .acc-family-bankline .btn-copy{
+    align-self:center !important;
+  }
+}
+
 </style>
 
 <script>
